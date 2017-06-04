@@ -1,0 +1,29 @@
+<program>::=Program IDN var <sp.og1> { <sp.op1> }
+<sp.og1>::=<sp.og>
+<sp.og>::=<sp.id1>|<sp.og> ; <sp.id1>
+<tup>::=int|real
+<sp.id1>::=<sp.id>
+<sp.id>::=<tup> IDN|<sp.id> , IDN
+<sp.op1>::=<sp.op>
+<sp.op>::=<sp.op> <op> ;|<op> ;
+<op>::=<vuvid>|<vvid>|<prusv>|<tsukl>|<um.per>
+<vuvid>::=<vuvid> <op.vuvody>|cout <op.vuvody>
+<op.vuvody>::=<< IDN|<< CONST
+<vvid>::=<vvid> <op.vvedennia>|cin <op.vvedennia>
+<op.vvedennia>::=>> IDN
+<prusv>::=IDN = <E1>
+<tsukl>::=for IDN = <E1> by <E1> to <E1> do <op> rof
+<E1>::=<E>
+<um.per>::=if <LV1> then <sp.op1> fi
+<LV1>::=<LV>
+<LV>::=<LT1>|<LV> or <LT1>
+<LT1>::=<LT>
+<LT>::=<LM>|<LT> and <LM>
+<LM>::=<vidn>|[ <LV1> ]|not <LM>
+<vidn>::=<E1> <zn.vidnosh> <E1>
+<zn.vidnosh>::=<|>|==|!=|>=|<=
+<E>::=<E> + <T1>|<T1>|<E> - <T1>
+<T1>::=<T>
+<T>::=<o>|<T> * <o>|<T> / <o>
+<o>::=IDN|CONST|( <E1> )|- <o1>
+<o1>::=<o>

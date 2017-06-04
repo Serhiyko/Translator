@@ -1,0 +1,15 @@
+﻿Program test 
+var int i, a, b;
+real y, k
+{
+cin>>a>>b;
+k=2.5*a;
+for i = 0 by 2 to 10 do
+y=(a+k)*25.4
+rof;
+if a<b then
+cout<<y;
+y=0;
+fi;
+cout<<y;
+}
