@@ -1,4 +1,4 @@
 # Translator
 Translator on Qt
 
-Translator consist of lexical analyzer, syntax analyzer, reverse polish notation (RPN) and calculation RPN.
+The translator consists of lexical analyzer, syntax analyzer, reverse polish notation (RPN) and calculation RPN.
